@@ -1,4 +1,4 @@
-# Projeto API REST para cadastro e gerenciamento de pessoas de yna organização
+# Projeto API REST para cadastro e gerenciamento de pessoas de uma organização
 
 Repositório da  API REST com Spring Boot para cadastro e gerenciamento de pessoas de uma organização, até o Deploy na nuvem (Heroku) 100% Cloud.Desenvolvimento no bootcamp Santander Fullstack
 

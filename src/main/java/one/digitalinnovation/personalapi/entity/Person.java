@@ -15,6 +15,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Person {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -23,7 +24,7 @@ public class Person {
     private String firstName;
 
     @Column(nullable = false)
-    private String LastName;
+    private String lastName;
 
     @Column(nullable = false, unique = true)
     private String cpf;
@@ -33,4 +34,5 @@ public class Person {
 
     @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
     private List<Phone> phones;
+
 }

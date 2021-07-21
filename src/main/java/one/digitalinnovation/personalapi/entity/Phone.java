@@ -14,8 +14,10 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Phone {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long id;
 
     @Enumerated(EnumType.STRING)
@@ -24,4 +26,5 @@ public class Phone {
 
     @Column(nullable = false)
     private String number;
+
 }

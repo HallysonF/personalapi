@@ -2,19 +2,20 @@ package one.digitalinnovation.personalapi.services;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import one.digitalinnovation.personalapi.dto.mapper.PersonMapper;
+import one.digitalinnovation.personalapi.mapper.PersonMapper;
 import one.digitalinnovation.personalapi.dto.request.PersonDTO;
 import one.digitalinnovation.personalapi.dto.response.MessageResponseDTO;
 import one.digitalinnovation.personalapi.entity.Person;
 import one.digitalinnovation.personalapi.exception.PersonNotFoundException;
 import one.digitalinnovation.personalapi.repository.PersonRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-@Data
+@AllArgsConstructor(onConstructor = @__(@Autowired))
 public class PersonService {
 
     private final PersonRepository personRepository;

@@ -1,7 +1,6 @@
 package one.digitalinnovation.personalapi.controller;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import one.digitalinnovation.personalapi.dto.request.PersonDTO;
 import one.digitalinnovation.personalapi.dto.response.MessageResponseDTO;
 import one.digitalinnovation.personalapi.exception.PersonNotFoundException;
@@ -15,10 +14,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/people")
-@Data
+@AllArgsConstructor(onConstructor = @__(@Autowired))
 public class PersonController {
 
-    private  PersonService personService;
+
+
+    private final PersonService personService;
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
@@ -48,4 +49,5 @@ public class PersonController {
     public void delete(@PathVariable Long id) throws PersonNotFoundException {
         personService.delete(id);
     }
+
 }

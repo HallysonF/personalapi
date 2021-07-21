@@ -4,15 +4,15 @@ Repositório da  API REST com Spring Boot para cadastro e gerenciamento de pesso
 
 ## Documentação
 
-* [Documentação API-REST](http://localhost:8081/swagger-ui.html)
+* [ API-REST Personal ](https://personal-live.herokuapp.com/api/v1/people)
 
 ## Download do projeto
 
 Faça o clone do projeto:
 
 ```bash
-$ git clone 
-$ cd ControleDePonto
+$ git clone https://github.com/HallysonF/personalapi
+$ cd personalapi
 ```
 ### Desenvolvimento da API-REST
 
@@ -43,6 +43,9 @@ Nunca escreva outro método getter ou equals novamente, com uma anotação sua c
 
   Traduzido do inglês-Swagger é uma linguagem de descrição de interface para descrever APIs RESTful expressas usando JSON. O Swagger é usado junto com um conjunto de ferramentas de software de código aberto para projetar, construir, documentar e usar serviços da Web RESTful. Wikipedia (inglês)
 
+- Heroku
+
+  Plataforma em nuvem como um serviço que suporta várias linguagens de programação. Uma das primeiras plataformas em nuvem, o Heroku está em desenvolvimento desde junho de 2007, quando suportava apenas a linguagem de programação Ruby, mas agora suporta Java, Node.js, Scala, Clojure, Python, PHP e Go
 ##IDE para desenvolvimento
 
 Para Desenvolvimento de todo o projeto foi utilizado o IDE InteliJ para mais informações

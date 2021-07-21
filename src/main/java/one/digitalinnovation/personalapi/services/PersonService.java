@@ -14,18 +14,18 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-@AllArgsConstructor
+@AllArgsConstructor(onConstructor = @__(@Autowired))
 public class PersonService {
 
     private final PersonRepository personRepository;
 
-    private final PersonMapper personMapper = PersonMapper.INSTANCE;
+    private final PersonMapper personMapper;
 
     public MessageResponseDTO create(PersonDTO personDTO) {
         Person person = personMapper.toModel(personDTO);
         Person savedPerson = personRepository.save(person);
 
-        MessageResponseDTO messageResponse = createMessageResponse("Person successfully created with ID ", savedPerson.getId());
+        MessageResponseDTO messageResponse = createMessageResponse("Cadastro criado com ID: ", savedPerson.getId());
 
         return messageResponse;
     }
@@ -51,7 +51,7 @@ public class PersonService {
         Person updatedPerson = personMapper.toModel(personDTO);
         Person savedPerson = personRepository.save(updatedPerson);
 
-        MessageResponseDTO messageResponse = createMessageResponse("Person successfully updated with ID ", savedPerson.getId());
+        MessageResponseDTO messageResponse = createMessageResponse("Cadastro atualizado com ID: ", savedPerson.getId());
 
         return messageResponse;
     }

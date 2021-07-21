@@ -8,7 +8,8 @@ import org.mapstruct.Mapping;
 @Mapper(componentModel = "spring")
 public interface PersonMapper {
 
-    Person toModel(PersonDTO personDTO);
+    @Mapping(target = "birthDate", source = "birthDate", dateFormat = "dd-MM-yyyy")
+    Person toModel(PersonDTO dto);
 
-    PersonDTO toDTO(Person person);
+    PersonDTO toDTO(Person dto);
 }

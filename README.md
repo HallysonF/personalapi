@@ -16,7 +16,7 @@ $ cd personalapi
 ```
 ### Desenvolvimento da API-REST
 
-Para o desenvolvimento da API foi utilizado Java, Spring Boot, Hibernate Envers e Lombok e para documentação da Api foi utilizado o Swagger
+Para o desenvolvimento da API foi utilizado Java, Spring Boot, Hibernate Envers e Lombok e mapstruct.
 
 - Java
 

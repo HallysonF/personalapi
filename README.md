@@ -1,6 +1,6 @@
 # Projeto API REST Ponto de Acesso
 
-Repositório da  API REST com Spring Boot para cadastro e gerenciamento de pessoas de uma organização, até o Deploy na nuvem (Heroku).Desenvolvimento no bootcamp Santander Fullstack
+Repositório da  API REST com Spring Boot para cadastro e gerenciamento de pessoas de uma organização, até o Deploy na nuvem (Heroku) 100% Cloud.Desenvolvimento no bootcamp Santander Fullstack
 
 ## Documentação
 
@@ -39,10 +39,6 @@ Para o desenvolvimento da API foi utilizado Java, Spring Boot, Hibernate Envers 
   Uma biblioteca java que se conecta automaticamente ao seu editor e ferramentas de construção, aprimorando o seu java.
 Nunca escreva outro método getter ou equals novamente, com uma anotação sua classe tem um construtor completo, Automatiza suas variáveis ​​de registro e muito mais.
   
-- Swagger
-
-  Traduzido do inglês-Swagger é uma linguagem de descrição de interface para descrever APIs RESTful expressas usando JSON. O Swagger é usado junto com um conjunto de ferramentas de software de código aberto para projetar, construir, documentar e usar serviços da Web RESTful. Wikipedia (inglês)
-
 - Heroku
 
   Plataforma em nuvem como um serviço que suporta várias linguagens de programação. Uma das primeiras plataformas em nuvem, o Heroku está em desenvolvimento desde junho de 2007, quando suportava apenas a linguagem de programação Ruby, mas agora suporta Java, Node.js, Scala, Clojure, Python, PHP e Go

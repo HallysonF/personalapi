@@ -19,7 +19,7 @@ public class PersonService {
 
     private final PersonRepository personRepository;
 
-    private final PersonMapper personMapper;
+    private final PersonMapper personMapper = PersonMapper.INSTANCE;
 
     public MessageResponseDTO create(PersonDTO personDTO) {
         Person person = personMapper.toModel(personDTO);

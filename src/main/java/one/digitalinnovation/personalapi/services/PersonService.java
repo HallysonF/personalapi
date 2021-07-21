@@ -1,6 +1,7 @@
 package one.digitalinnovation.personalapi.services;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import one.digitalinnovation.personalapi.dto.mapper.PersonMapper;
 import one.digitalinnovation.personalapi.dto.request.PersonDTO;
 import one.digitalinnovation.personalapi.dto.response.MessageResponseDTO;
@@ -14,7 +15,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-@AllArgsConstructor(onConstructor = @__(@Autowired))
+@Data
 public class PersonService {
 
     private final PersonRepository personRepository;
